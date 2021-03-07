@@ -27,14 +27,14 @@ accent color #2196F3
 }
 
 body {
-  width: 1600px;
-
   font-family: var(--main-font);
   background-color: #ffffff;
   color: var(--title-color);
 
   margin-left: auto;
   margin-right: auto;
+
+  /* width: 1600px; */
 }
 
 .visually-hidden {
@@ -227,6 +227,7 @@ img {
 
 .hero-section {
   background-color: #2f303a; /*временный фон*/
+
   text-align: center;
   padding: 200px 0px;
 }
@@ -333,8 +334,9 @@ img {
 .team-member-desc {
   border-radius: 0px 0px 4px 4px;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
   background-color: var(--background-color);
 }
 
@@ -351,6 +353,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .portfolio-desc {
   font-size: 16px;
@@ -358,15 +361,16 @@ img {
 }
 
 .filter-buttons-list {
-  width: 1200px;
   display: flex;
   justify-content: center;
   margin-left: -8px;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 
   /* outline: 0.5px solid green; */
 }
-
+.button {
+  margin-left: 8px;
+}
 .filter-button {
   font-weight: 500;
   border: 0.5px;
@@ -378,7 +382,6 @@ img {
   letter-spacing: 0.03em;
 
   padding: 6px 22px;
-  margin-left: 8px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -402,7 +405,9 @@ img {
 }
 .portfolio-item-desc-wrapper {
   padding: 20px 24px;
-  outline: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 /*============== END PORTFOLIO ========================*/
